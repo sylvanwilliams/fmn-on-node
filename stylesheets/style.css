@@ -1,0 +1,153 @@
+
+body{
+	background-color: rgb(233,227,212); 
+}
+
+
+
+.background_image{
+background-image: url("../images/background.jpg");
+background-position: top center;
+background-repeat: no-repeat;
+width: 1024px;
+height: 768px;
+margin-left: auto;
+margin-right: auto;
+}
+
+.location_background{
+background-image: url("../images/location_background.jpg");
+background-position: top center;
+background-repeat: no-repeat;
+width: 1024px;
+height: 768px;
+margin-left: auto;
+margin-right: auto;
+}
+
+.plain_background{
+background-image: url("../images/plain_background.png");
+background-position: top center;
+background-repeat: no-repeat;
+width: 1024px;
+height: 768px;
+margin-left: auto;
+margin-right: auto;
+}
+
+.treats_background{
+background-image: url("../images/treats_background.jpg");
+background-position: top center;
+background-repeat: no-repeat;
+width: 1024px;
+height: 768px;
+margin-left: auto;
+margin-right: auto;
+}
+
+
+
+
+.compass{
+	background-image: url("../images/compass.png");
+	background-position: top center;
+	background-repeat: no-repeat;
+	width: 238px;
+	height: 200px;
+	position: relative;
+	left: 125px;
+	top: 300px;
+
+}
+
+.lady{
+	background-image: url("../images/lady.png");
+	background-position: top center;
+	background-repeat: no-repeat;
+	width: 244px;
+	height: 456px;
+	position: relative;
+	left: 375px;
+	top: -25px;
+}
+	
+.microscope{
+		background-image: url("../images/microscope.png");
+		background-position: top center;
+		background-repeat: no-repeat;
+		width: 228px;
+		height: 359px;
+		position: relative;
+		left: 650px;
+		top: -425px;
+}
+
+.location_map{
+	height: 300px;
+	width: 600px;
+	position: relative;
+	left:212px;
+	top:300px;
+	background-color:#ffffff;
+	border-width:4px;
+	border-color:#5d5d5d;
+	-moz-box-shadow:0px 0px 20px #000000;
+	-webkit-box-shadow:0px 0px 20px #000000;
+	box-shadow:0px 0px 20px #000000;
+	/*IE 7 AND 8 DO NOT SUPPORT BLUR PROPERTY OF SHADOWS*/
+}
+
+footer{
+	font-family: 'Almendra SC', serif;
+	text-align: center;
+}
+
+.goods_text{
+	font-family: 'Almendra SC', serif;
+	font-size: 20px;
+	position: relative;
+	top: 100px;
+	left: 205px;
+	width: 600px;
+	padding: 10px;
+	background-color:#e9e3da;
+	border-width:2px;
+	border-color:#999999;
+	-moz-border-radius:8px;
+	-webkit-border-radius:8px;
+	border-radius:8px;
+	/*IE 7 AND 8 DO NOT SUPPORT BORDER RADIUS*/
+	-moz-box-shadow:0px 0px 14px #000000;
+	-webkit-box-shadow:0px 0px 14px #000000;
+	box-shadow:0px 0px 14px #000000;
+	/*IE 7 AND 8 DO NOT SUPPORT BLUR PROPERTY OF SHADOWS*/
+	opacity:0.72;
+	-ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=72);
+	/*-ms-filter must come before filter*/
+	filter: alpha(opacity=72);
+	/*INNER ELEMENTS MUST NOT BREAK THIS ELEMENTS BOUNDARIES*/
+	/*All filters must be placed together*/
+	
+}
+
+.chimp_form{
+	position: relative;
+	top: 250px;
+	left: 180px;
+	width: 600px;
+	padding: 10px;
+}
+
+.goods_text a:link{
+	color: black;
+	text-decoration: none;
+	target: _blank;
+}
+
+.goods_text a:visited{
+	color: black;
+	text-decoration: none;
+}
+
+
+
