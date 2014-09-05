@@ -1,4 +1,29 @@
 extends layout
 
+block append head
+  meta(charset='utf-8')
+  meta(name='generator', content='Wufoo.com')
+  link(rel='stylesheet', href='/stylesheets/structure.css')
+  link(rel='stylesheet', href='/stylesheets/form.css')
+  link(rel='stylesheet', href='/stylesheets/theme.css')
+  script(src='/javascripts/wufoo.js')
 block content
-  h1 Treats page.
+  div.treats_background
+    div.chimp_form
+      div#container.ltr
+        h1#logo
+          a Wufoo
+        form#form1(class='wufoo page',autocomplete='off',enctype='multipart/form-data',method='post',novalidate,action='https://forgetmenotabingdon.wufoo.com/forms/z7x3k1/#public')
+          header#header.info
+            h2 Join Forget-Me-Not's Mailing List
+            div We'll send you coupons and sale info!
+          ul
+            li#foli0.notranslate
+              label#title0.desc(for='Field0') Your Email Address
+                span#req_0.req *
+              div
+                input#Field0(name='Field0',type='email',spellcheck='false',class='field text large',value='',maxlength='255',tabindex='1',required)
+            li#foli2.notranslate
+              label#title2.desc(for='Field2') Name
+              span
+  footer
