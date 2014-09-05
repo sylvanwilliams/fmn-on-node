@@ -118,3 +118,7 @@ footer {
   color: #000;
   text-decoration: none;
 }
+.fb-like-box {
+  width: 250px !important;
+  height: 200px !important;
+}
