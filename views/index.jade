@@ -3,25 +3,17 @@ extends layout
 block content
   div#fb-root
   script.
-    window.fbAsyncInit = function() {
-        FB.init({
-          appId      : '82640158906',
-          xfbml      : false,
-          version    : 'v2.0'
-        });
-      };
-
-      (function(d, s, id){
-         var js, fjs = d.getElementsByTagName(s)[0];
-         if (d.getElementById(id)) {return;}
-         js = d.createElement(s); js.id = id;
-         js.src = "//connect.facebook.net/en_US/sdk.js";
-         fjs.parentNode.insertBefore(js, fjs);
-       }(document, 'script', 'facebook-jssdk'));
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+        fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
   div(class='background_image')
     div(class='compass', onclick="location.href='location'", style='cursor:pointer')
     div(class='lady', onclick="location.href='goods'", style='cursor:pointer')
     div(class='microscope', onclick="location.href='treats'", style='cursor:pointer')
-  // div.fb-like(data-href='https://www.facebook.com/pages/Forget-Me-Not/82640158906',data-share='false',data-layout='standard',data-send='true',data-width='225')
-  div.fb-like-box(data-href='https://www.facebook.com/pages/Forget-Me-Not/82640158906',data-colorscheme='light',data-show-faces='false',data-header='false',data-stream='false',data-show-border='false')
+    div.like_button
+      div.fb-like(data-href='https://www.facebook.com/pages/Forget-Me-Not/82640158906',data-share='false',data-layout='standard',data-send='true',data-show-faces='false',data-width='300')
   footer Site by Purring Walrus Studios&trade;. Copyright 2014

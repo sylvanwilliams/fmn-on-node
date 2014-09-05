@@ -5,8 +5,9 @@ body {
   background-image: url("../images/background.jpg");
   background-position: top center;
   background-repeat: no-repeat;
+  position: relative;
   width: 1024px;
-  height: 768px;
+  height: 800px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -118,7 +119,11 @@ footer {
   color: #000;
   text-decoration: none;
 }
-.fb-like-box {
-  width: 250px !important;
-  height: 200px !important;
+.like_button {
+  background-position: top center;
+  width: 450px;
+  height: 20px;
+  position: absolute;
+  left: 50px;
+  bottom: 5px;
 }
