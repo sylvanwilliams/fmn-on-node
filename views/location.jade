@@ -1,5 +1,11 @@
 extends layout
 
 block content
-  h1 Location page.
-  
+  head
+    script(type='text/javascript', src='http://maps.googleapis.com/maps/api/js?key=AIzaSyC0zQO3j7jegQt9_llu5gS08GzLAjfwVks&sensor=false')
+    script(type='text/javascript', src='/javascripts/initializeMap.js')
+    meta(name='viewport', content='initial-scale=1.0, user-scalable=no')
+  body(onload='initializeMap()')
+    div(class="location_background")
+      div#map_canvas.location_map
+  footer Site by Purring Walrus Studios&trade;. Copyright 2014
