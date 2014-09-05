@@ -1,8 +1,26 @@
 extends layout
 
 block content
+  div#fb-root
+  script.
+    window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '82640158906',
+          xfbml      : true,
+          version    : 'v2.0'
+        });
+      };
+
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "//connect.facebook.net/en_US/sdk.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
   div(class='background_image')
     div(class='compass', onclick="location.href='location'", style='cursor:pointer')
     div(class='lady', onclick="location.href='goods'", style='cursor:pointer')
     div(class='microscope', onclick="location.href='treats'", style='cursor:pointer')
+  div.fb-like(data-send='true',data-width='20')
   footer Site by Purring Walrus Studios&trade;. Copyright 2014
