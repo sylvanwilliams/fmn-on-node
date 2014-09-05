@@ -1,9 +1,9 @@
 extends layout
 
-block content
-  head
+block append head
     script(type='text/javascript', src='http://maps.googleapis.com/maps/api/js?key=AIzaSyC0zQO3j7jegQt9_llu5gS08GzLAjfwVks&sensor=false')
     script(type='text/javascript', src='/javascripts/initializeMap.js')
+block content
   body(onload='initializeMap()')
     div(class="location_background")
       div#map_canvas.location_map
